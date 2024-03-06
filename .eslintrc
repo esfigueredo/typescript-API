@@ -1,15 +1,19 @@
 {
     "env": {
-        "jest": true
+      "jest": true
     },
     "root": true,
     "parser": "@typescript-eslint/parser",
     "plugins": [
-        "@typescript-eslint"
+      "@typescript-eslint"
     ],
     "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended"
-    ]
-}
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "globals": {
+      "testRequest": "writable"
+    }
+  }
+  
